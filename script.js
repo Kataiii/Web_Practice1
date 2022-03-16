@@ -15,7 +15,7 @@ function getToday(){
 document.getElementById('send_name').onclick = function(){
 	document.getElementById('overlay-background').style.display='none';
 	username = document.getElementById('input_name').value;
-	if(username==='')console.log("It's a trap");
+	username=username.trim();
 	sessionStorage.setItem('name_user',document.getElementById('input_name').value);
 	if(username===""||username===null||username===undefined){
 		document.getElementById('salutation_text').innerHTML="Добро пожаловать!";
