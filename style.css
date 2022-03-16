@@ -563,10 +563,6 @@ span{
       opacity: .8;
     }
     40% {
-      transform: scale(1);
-      opacity: .9;
-    }
-    40% {
       transform: scale(.2);
       opacity: .2;
     }

@@ -506,5 +506,3 @@ document.addEventListener('click',(e)=>{
 		document.getElementById("task7_background").style.zIndex="-900";
 	}
 });
-
-
