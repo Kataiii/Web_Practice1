@@ -248,12 +248,21 @@ function findMax(array){
 	return max;
 }
 
+function findMin(array){
+	min=array[0];
+	for(let i=1;i<array.length;i++{
+		if(min>array[i])min=array[i];
+	}
+	return min;
+}
+
 //Task 3
 document.getElementById('run_task_3').onclick = function(){
 	//Объявление переменных
 	let arr = new Array();
 	let string = document.getElementById('array').value;
 	let max;
+	let min;
 
 	//преобразование строки в массив
 	arr=string.split(' ',5);
@@ -269,7 +278,7 @@ document.getElementById('run_task_3').onclick = function(){
 				document.getElementById('answer_3').style.display='block';
 		}else{
 			//вывод наибольшего элемента в масссиве функция findMax()
-			document.getElementById('answer_3').innerHTML='Наибольший элемент массива:'+findMax(arr);
+			document.getElementById('answer_3').innerHTML='Наибольший элемент массива - '+findMax(arr)+" и наименьший элемент массива - "+findMin(arr);
 			document.getElementById('answer_3').style.display='block';
 		}
 	}
